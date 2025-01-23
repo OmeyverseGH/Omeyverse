@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #eeeeee url('data:image/png;base64,...'); /* Base64 image */
+    border-top: 5px solid #5ac800; 
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.p1 {
+    color: white;
+    text-align: left;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    border: 1px solid #444;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    background: url("/img/black-button-bg.gif?Ty01XDIUuk5WD0uuzjC--A") repeat-x 0 bottom #646464;
+}
+
+.white-box {
+    width: 80%;
+    min-height: 400px; /* Set a minimum height */
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* To ensure buttons stay at the bottom */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.white-box .content {
+    flex-grow: 1; /* Allow content to take up available space */
+    text-align: center;
+}
+
+.white-box .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.white-box .buttons .button {
+    margin-top: 0; /* Remove extra margin for buttons */
+}

@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #2c3e50;
+    --success-color: #27ae60;
+    --error-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.status-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.status-indicator {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.online {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.offline {
+    background-color: var(--error-color);
+    color: white;
+}
+
+.details {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.url {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.url:hover {
+    text-decoration: underline;
+}
+
+.refresh-btn {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    border: 1px solid #444;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    background: url("https://omeyverse.com/img/black-button-bg.gif?Ty01XDIUuk5WD0uuzjC--A") repeat-x 0 bottom #646464;
+}
+
+.refresh-btn:hover {
+    background-color: #34495e;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

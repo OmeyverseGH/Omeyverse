@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #eeeeee url('data:image/png;base64,...'); /* Base64 image */
+    border-top: 5px solid #5ac800; 
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.p1 {
+    color: white;
+    text-align: left;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    border: 1px solid #444;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    background: #eeeeee url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAIAAAC2BqGFAAADF0lEQVR4nO2dwW7bMBAFuRLz/5+bgyWyhwUE13ELtN43EIE3pyQHZj1YUoRMPcX393fT8Hg8zvOcc4rGryUi9n3/+voSjb+Jxm2tbdsWEbrxa4mIbVPa0A1tnrFoCIuGsGgIi4awaAiLhrBoCIuGsGgIi4awaAiLhrBoCIuGsGgIi4awaAiLhrBoCKHoOecqX4E3fbUS0RGxluUkaxZ9c6/q6DnnGEM0uIgxhq456kVnO+fRmYWaOqvNshVNXS96znkcx0JnlC5S9HEcisorRWcjnOd5nmfhsDBX/bV93UtGyZrGGFnl20XjqvsO58Su8l7qzF+zqfd9z0NiJQ1eIzovI1cv/KwsK87zbTcRnTVHxMtF+8V1RJQU3B+Px4eH+66i2zvFWeW2bYVFl/B89Wu/V54/jzHGGCXNMcbo53l+uA/70zRsraXZfd9rp2EJ1ySLiLcTMS1nG30oes7ZdZuw/Ay99+zl+yhOsp7s1og4jqP9Ycn++ff/QHuvI3u53amRX8jCrjp1qETnitF7v8+i/BeeZ57oX6judaToG64Yb8nth/Ryrerom2zj/gnp0xXCpWOVdk6yqZdcOhQjq1lv6TAvWDSERUNYNIRFQ1g0hEVDWDSERUNYNIRFQ1g0hEVDWDSERUNYNIRFQ1g0hEVDWDSERUNYNIRFQ1g0hEVDWDSERUNYNIRFQ1g0hEVDWDSERUNYNIRFQ1g0hEVDWDSERUNYNIRFQ1g0hEVDSESvFS34jK5yYWSmLudTgTpPVSVamvMpQpqnKlw6dDmf5QB5qsKlQ5fzWQ6Qp6rddYhyPgvB8lT755krfM5nCWSe6pyzXwo+GQXO+SyBzFMdY/SSd7uTOZ8lwHmq+77XpO2SOZ8l8HmqNaLhnE8dujzVyl0HlvMpRZSnKnmZgjrnU4Q0T1XyMgV1zqcCdZ6qMDJTl/MpQrojUt3rWKudE2meqrDp1nKtrnax2b0uFg1h0RAWDWHREBYNYdEQFg1h0RAWDWHREBYNYdEQFg1h0RAWDWHREBYNYdEQFg0hFL3W0xXS5ypaa78A+zg9ngAQ62UAAAAASUVORK5CYII=');
+}
+.white-box {
+    width: 80%;
+    min-height: 400px; /* Set a minimum height */
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* To ensure buttons stay at the bottom */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.white-box .content {
+    flex-grow: 1; /* Allow content to take up available space */
+    text-align: center;
+}
+
+.white-box .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.white-box .buttons .button {
+    margin-top: 0; /* Remove extra margin for buttons */
+}
