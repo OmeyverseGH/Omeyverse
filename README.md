@@ -32,38 +32,9 @@ The account login and profile system shared across all of these.
 Some shared libraries to be used across all of these. None of these are seen by the user.
 # grp_image_processor #
 Supposed to process TGAs submitted by in-game posts. Returns base64 images. Never finished. Not finishing it. It's hacky and horrible.
-
+# grp_status #
+The status page for the clone
 # How to install??? #
 tl;dr setup two virtual hosts, one goes to the grp_portal-php dir, and one goes to the grp_offdevice-php dir. grp_n3ds-php is unfinished. but it partially works
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\
-
-
+You may notice mutiple css files in the code. This is because whenever i wanted the css to update asap i would have to copy the css file to one witha new new and update lib/htm.php for whatever section to the new css file name. This should not affect you.
